@@ -1,10 +1,11 @@
 #!/bin/bash
 
 inFile="${1}"
+DEBUG="True"
 
 # Ideally, hill would be a 2d array
-# Sadly, multidimensional arrays don't exist in BASH
-# So, we'll use a Hash instead.  It's gonna get weird.
+#   Sadly, multidimensional arrays don't exist in BASH
+#   So, we'll use a Hash instead.  Things might get weird.
 declare -A hill
 numCols=$( head -n 1 "${inFile}" | tr -d '\n' | wc -c )
 numRows=$( wc -l < "${inFile}" )
@@ -19,23 +20,56 @@ while read LINE; do
   rowNum=$((rowNum+1))
 done < <( cat "${inFile}" )
 
-# Debug - print the "hill"
-for ((y=0;y<numRows;y++)) do
-  for ((x=0;x<numCols;x++)) do
-    echo -n "${hill[$x,$y]}"
+function printHill() {
+  for ((y=0;y<numRows;y++)) do
+    for ((x=0;x<numCols;x++)) do
+      echo -n "${hill[$x,$y]}"
+    done
+    echo
   done
-  echo
-done
+}
+#printHill
 
+function debug() {
+  local ts=$( date +"%F_%T.%N" )
+  [[ "${DEBUG}" == "True" ]] || return
+  echo "${ts}: ${@}" >&2
+}
 
-# We start in the top-left, which will be (0,0)
-# Going right increments X
-# Going down increments Y
-startX=0
-startY=0
+#
+# Count trees along a given slope down the pre-defined "hill"
+#   Usage: countTrees HorizontalMovement VerticalMovement
+#   Example: countTrees 3 1
+function countTrees() {
+  # Define the slope we're taking down the hill
+  local xStep="${1}"
+  local yStep="${2}"
+
+  # We start in the top-left, which will be (0,0)
+  local xPos=0
+  local yPos=0
+
+  local trees=0
+
+  # When yPos == numRows, we'll have gone *past* the last 
+  #   row, since yPos=0 is Row 1
+  while [[ "${yPos}" -lt "${numRows}" ]]; do
+    # Check if we're at a tree
+    if [[ "${hill[${xPos},${yPos}]}" == "#" ]]; then
+      debug "Hit a tree at ${xPos},${yPos}"
+      trees=$((trees+1))
+    fi
+    # Calculate where we'll be next
+    yPos=$(( yPos + yStep ))
+    # Since the "hill" repeats infinitely, horizontally, loop back on self as necessary:
+    xPos=$(( ( xPos + xStep ) % numCols ))
+  done
+
+  echo "${trees}"
+}
+
 
 # Each tick takes us X+3 (right 3), and Y+1 (down 1)
-stepX=3
-stepY=1
+countTrees 3 1
 
 
