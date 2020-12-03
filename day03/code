@@ -1,0 +1,41 @@
+#!/bin/bash
+
+inFile="${1}"
+
+# Ideally, hill would be a 2d array
+# Sadly, multidimensional arrays don't exist in BASH
+# So, we'll use a Hash instead.  It's gonna get weird.
+declare -A hill
+numCols=$( head -n 1 "${inFile}" | tr -d '\n' | wc -c )
+numRows=$( wc -l < "${inFile}" )
+colNum=0
+rowNum=0
+while read LINE; do
+  colNum=0
+  while read -n1 char; do
+    hill[${colNum},${rowNum}]="${char}"
+    colNum=$((colNum+1))
+  done <<<"${LINE}"
+  rowNum=$((rowNum+1))
+done < <( cat "${inFile}" )
+
+# Debug - print the "hill"
+for ((y=0;y<numRows;y++)) do
+  for ((x=0;x<numCols;x++)) do
+    echo -n "${hill[$x,$y]}"
+  done
+  echo
+done
+
+
+# We start in the top-left, which will be (0,0)
+# Going right increments X
+# Going down increments Y
+startX=0
+startY=0
+
+# Each tick takes us X+3 (right 3), and Y+1 (down 1)
+stepX=3
+stepY=1
+
+
