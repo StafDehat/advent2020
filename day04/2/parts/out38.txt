@@ -1,0 +1,4 @@
+
+hgt:177cm
+byr:1955 pid:585735590 iyr:2010 ecl:grn eyr:2024
+hcl:#602927

@@ -1,0 +1,5 @@
+
+hcl:#a97842 byr:1928
+iyr:2013
+pid:870072019 hgt:76in
+ecl:oth cid:127 eyr:2026

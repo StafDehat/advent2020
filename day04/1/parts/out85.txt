@@ -1,0 +1,5 @@
+
+pid:4354408888 iyr:2012
+hcl:#b6652a cid:104
+hgt:96 eyr:2020
+byr:1933 ecl:amb

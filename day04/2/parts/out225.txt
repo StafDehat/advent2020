@@ -1,0 +1,4 @@
+
+ecl:grn iyr:2010 eyr:2022 byr:1924
+pid:214641920 hcl:#ceb3a1
+hgt:155cm

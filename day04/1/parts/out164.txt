@@ -1,0 +1,5 @@
+
+hcl:#602927
+hgt:189cm
+pid:949021883 iyr:2014 ecl:oth cid:327
+eyr:2027 byr:1953

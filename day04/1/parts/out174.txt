@@ -1,0 +1,7 @@
+
+ecl:blu
+iyr:2016
+hgt:152cm byr:1964
+hcl:#c4f777
+eyr:2021
+pid:044307549 cid:80

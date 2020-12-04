@@ -1,0 +1,4 @@
+
+ecl:grn byr:1939 hcl:#733820
+eyr:2026 pid:993218958 iyr:2010
+hgt:150cm

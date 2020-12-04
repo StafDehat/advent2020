@@ -1,0 +1,5 @@
+
+ecl:gry
+iyr:2017
+hgt:185cm hcl:#6b5442 byr:1993
+eyr:2029 pid:366083139 cid:343

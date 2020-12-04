@@ -1,0 +1,5 @@
+
+hgt:68in
+hcl:#c0946f iyr:2012
+eyr:2023 pid:933562997 byr:1993
+ecl:grn

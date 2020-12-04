@@ -1,0 +1,5 @@
+
+hgt:161cm
+hcl:#888785 byr:1981 pid:835477382 eyr:2025 iyr:2012
+cid:348
+ecl:blu

@@ -1,0 +1,6 @@
+
+pid:509387921
+eyr:2022
+hcl:#888785 ecl:oth hgt:193cm
+iyr:2012 cid:97
+byr:1975

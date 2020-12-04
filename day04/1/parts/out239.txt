@@ -1,0 +1,4 @@
+
+hcl:58aa4a byr:1930 hgt:193cm
+iyr:1998 cid:196 ecl:brn
+eyr:2032

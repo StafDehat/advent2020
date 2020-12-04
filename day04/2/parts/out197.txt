@@ -1,0 +1,3 @@
+
+hgt:159cm hcl:b4ce6a cid:319 eyr:2035 iyr:1965 ecl:oth
+byr:2010 pid:158cm

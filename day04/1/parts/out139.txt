@@ -1,0 +1,5 @@
+
+pid:490807331 iyr:2016
+hcl:#ceb3a1
+hgt:150cm eyr:2026
+ecl:amb byr:1967

@@ -1,0 +1,4 @@
+
+ecl:#ba3242
+hgt:80 byr:1931
+pid:550004054 iyr:1949 eyr:1944 hcl:fb3859

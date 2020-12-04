@@ -1,0 +1,4 @@
+
+iyr:2019 cid:172
+hgt:152cm
+eyr:2022 ecl:oth hcl:#602927 byr:1960

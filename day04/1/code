@@ -1,0 +1,21 @@
+#!/bin/bash
+
+cat input | 
+  awk '/^\s*$/{n++}
+    {print >"parts/out"n".txt"}
+    END {print n}'
+
+cd parts
+count=0
+for x in *; do
+  grep -q 'byr:' "$x" || continue
+  grep -q 'iyr:' "$x" || continue
+  grep -q 'eyr:' "$x" || continue
+  grep -q 'hgt:' "$x" || continue
+  grep -q 'hcl:' "$x" || continue
+  grep -q 'ecl:' "$x" || continue
+  grep -q 'pid:' "$x" || continue
+  count=$(( count + 1 ))
+done
+
+echo ${count}

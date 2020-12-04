@@ -1,0 +1,4 @@
+
+iyr:1958 hgt:165cm pid:377677319
+ecl:grt eyr:2032 byr:2025
+hcl:bbfbe2

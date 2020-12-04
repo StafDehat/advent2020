@@ -1,0 +1,5 @@
+
+hgt:167cm
+iyr:2010 byr:1982 ecl:amb
+cid:235 pid:557737957 eyr:2020
+hcl:#ceb3a1

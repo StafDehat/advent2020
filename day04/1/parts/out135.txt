@@ -1,0 +1,6 @@
+
+eyr:2030
+iyr:2011
+ecl:grn pid:313741119
+hgt:161cm byr:1946
+hcl:#a97842

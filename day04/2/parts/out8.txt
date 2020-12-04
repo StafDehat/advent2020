@@ -1,0 +1,5 @@
+
+iyr:2019
+eyr:2025 pid:138912840 byr:1996
+hgt:166cm
+hcl:#888785 ecl:grn

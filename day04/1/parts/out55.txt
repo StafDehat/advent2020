@@ -1,0 +1,4 @@
+
+hcl:#623a2f
+ecl:brn hgt:183cm pid:524675399
+eyr:2020 iyr:2012 byr:1981

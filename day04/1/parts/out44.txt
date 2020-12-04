@@ -1,0 +1,2 @@
+
+hcl:#cfa07d ecl:#13bd36 hgt:193cm eyr:2027 pid:181cm byr:1952 iyr:1951

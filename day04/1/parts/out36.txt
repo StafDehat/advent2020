@@ -1,0 +1,3 @@
+
+hgt:165 eyr:2030 iyr:2027
+ecl:#1a34f1 pid:2894591864 byr:2024 hcl:z

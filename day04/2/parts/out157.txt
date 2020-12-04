@@ -1,0 +1,6 @@
+
+eyr:2018 iyr:2029
+ecl:brn
+byr:2022 pid:#ff6df1
+hcl:z
+hgt:68cm

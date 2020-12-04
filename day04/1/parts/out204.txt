@@ -1,0 +1,4 @@
+
+byr:1930
+iyr:2020 ecl:hzl
+hcl:#ceb3a1 pid:285751767 cid:287 eyr:2023 hgt:192cm

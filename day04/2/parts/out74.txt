@@ -1,0 +1,5 @@
+
+hgt:189cm
+eyr:2026 pid:120642045 ecl:blu
+hcl:#602927 cid:177
+byr:1954 iyr:2012

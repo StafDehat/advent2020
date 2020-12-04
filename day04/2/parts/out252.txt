@@ -1,0 +1,4 @@
+
+eyr:2025 ecl:grn iyr:2019 cid:226 hcl:#b6652a
+byr:1932 pid:715708549
+hgt:156cm

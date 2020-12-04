@@ -1,0 +1,4 @@
+
+hcl:z pid:150cm ecl:utc iyr:1981
+eyr:2034
+hgt:156in cid:260 byr:2027

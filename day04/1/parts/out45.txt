@@ -1,0 +1,5 @@
+
+ecl:brn hcl:#602927
+hgt:161cm
+eyr:2027 pid:822749462 byr:1946
+iyr:2014

@@ -1,0 +1,5 @@
+
+pid:304792392 hcl:487823 eyr:2020
+hgt:70cm byr:2024
+iyr:1953
+ecl:blu

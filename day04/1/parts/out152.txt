@@ -1,0 +1,4 @@
+
+iyr:2024 pid:#a08e69
+hcl:z byr:1966 ecl:#7b9978 eyr:2035
+hgt:69cm

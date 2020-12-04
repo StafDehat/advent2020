@@ -1,0 +1,6 @@
+
+iyr:2014
+byr:1971 cid:96
+hgt:74in
+pid:136003336
+eyr:2020 ecl:hzl hcl:#efcc98

@@ -1,0 +1,6 @@
+
+iyr:2018 eyr:2026 pid:523863237
+hgt:187cm
+ecl:oth
+byr:1944
+hcl:#a97842

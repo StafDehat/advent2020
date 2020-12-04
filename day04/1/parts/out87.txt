@@ -1,0 +1,4 @@
+
+byr:1932
+hgt:170cm
+iyr:2014 pid:777844412 eyr:2040 hcl:#cfa07d ecl:brn

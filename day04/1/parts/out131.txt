@@ -1,0 +1,4 @@
+
+ecl:gry pid:347763159 eyr:2024 iyr:2017 byr:1961
+hgt:151cm
+hcl:#623a2f

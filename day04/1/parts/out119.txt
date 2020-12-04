@@ -1,0 +1,4 @@
+
+ecl:amb
+hgt:118 byr:1981 iyr:2019
+hcl:#a97842 eyr:2021 pid:270790642

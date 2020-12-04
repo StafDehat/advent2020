@@ -1,0 +1,4 @@
+
+hgt:190in
+hcl:z eyr:2029 pid:74228790
+iyr:2016 byr:2018 ecl:brn

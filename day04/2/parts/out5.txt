@@ -1,0 +1,4 @@
+
+hgt:170cm ecl:amb
+hcl:#c0946f eyr:2020 iyr:2016 pid:725010548
+byr:1928

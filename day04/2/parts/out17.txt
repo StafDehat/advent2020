@@ -1,0 +1,5 @@
+
+ecl:amb eyr:2024
+byr:1965 iyr:2010 pid:094059049
+hcl:#fffffd
+hgt:168cm

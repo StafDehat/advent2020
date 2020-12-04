@@ -1,0 +1,5 @@
+
+hgt:67in
+byr:1967
+cid:333 hcl:#cfa07d
+iyr:2012 eyr:2024 ecl:hzl pid:538161833

@@ -1,0 +1,6 @@
+
+iyr:2016 byr:1934 hcl:#b6652a
+hgt:162cm ecl:hzl
+cid:296
+pid:742610207
+eyr:2022

@@ -1,0 +1,5 @@
+
+iyr:2010
+ecl:amb hcl:#341e13 hgt:184cm
+eyr:2027
+pid:976217816 byr:1950

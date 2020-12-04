@@ -1,0 +1,3 @@
+
+byr:1941 ecl:gry iyr:2019 eyr:2026 hgt:73cm hcl:#602927
+pid:352996721

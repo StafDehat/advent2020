@@ -1,0 +1,6 @@
+
+cid:140
+ecl:amb
+eyr:2022 hgt:181cm hcl:#efcc98
+byr:1943
+iyr:2016
