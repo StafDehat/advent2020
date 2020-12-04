@@ -1,4 +1,0 @@
-
-iyr:2014 byr:1935
-eyr:2021 cid:235 pid:#1b34e1
-hcl:#89313f hgt:164cm ecl:blu

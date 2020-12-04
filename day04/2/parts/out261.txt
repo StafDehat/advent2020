@@ -1,5 +1,0 @@
-
-ecl:hzl iyr:2016 cid:327
-byr:1923 pid:695935353 hgt:184cm
-hcl:#a97842
-eyr:2028

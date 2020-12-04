@@ -1,4 +1,0 @@
-
-hcl:#5637d2 eyr:2030 byr:1955
-hgt:187cm
-pid:862655087 iyr:2014 ecl:grn

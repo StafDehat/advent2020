@@ -1,4 +1,0 @@
-
-ecl:blu pid:071991002 eyr:2021 byr:1978 cid:321
-hcl:#efcc98
-iyr:2013 hgt:68in

@@ -1,5 +1,0 @@
-
-pid:6010745668
-byr:1934 ecl:oth eyr:2020 hgt:164cm
-hcl:#733820
-iyr:2016

@@ -1,4 +1,0 @@
-
-eyr:2029
-hgt:152cm hcl:#fffffd ecl:amb byr:1946 iyr:2013
-cid:62 pid:005240023

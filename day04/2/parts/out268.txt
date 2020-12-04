@@ -1,5 +1,0 @@
-
-pid:357180007 iyr:2010 ecl:grn
-byr:1991
-hcl:#341e13
-eyr:2020 hgt:159cm

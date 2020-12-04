@@ -1,4 +1,0 @@
-
-iyr:2017 eyr:2024
-hcl:#7d3b0c cid:279
-ecl:gry byr:1981 hgt:176cm pid:973822115

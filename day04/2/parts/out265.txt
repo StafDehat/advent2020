@@ -1,4 +1,0 @@
-
-byr:1949
-hgt:176cm pid:531868428
-hcl:#cfa07d ecl:brn iyr:2014 eyr:2024

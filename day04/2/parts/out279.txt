@@ -1,4 +1,0 @@
-
-pid:215206381 byr:1928
-hgt:163cm
-hcl:#b6652a ecl:oth iyr:2011

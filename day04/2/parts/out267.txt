@@ -1,4 +1,0 @@
-
-iyr:2016 eyr:2030
-hgt:177cm cid:137 ecl:brn
-hcl:#efcc98 pid:712202745 byr:1938

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -f parts/out*.txt
 cat "${1}" | 
   awk '/^\s*$/{n++}
     {print >"parts/out"n".txt"}

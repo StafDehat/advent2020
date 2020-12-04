@@ -1,5 +1,0 @@
-
-hcl:#18171d
-byr:1973 ecl:hzl hgt:174cm pid:922891164
-iyr:2013
-eyr:2023
