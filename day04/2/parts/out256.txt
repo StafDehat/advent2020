@@ -1,5 +1,4 @@
 
-eyr:2022
-ecl:xry hgt:154cm pid:62205162
-iyr:2014 byr:1936
-cid:61
+hcl:#a97842 eyr:2021 cid:261
+hgt:61in pid:162402242
+ecl:amb byr:1938 iyr:2016

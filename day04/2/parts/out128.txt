@@ -1,5 +1,4 @@
 
-hgt:167cm
-iyr:2010 byr:1982 ecl:amb
-cid:235 pid:557737957 eyr:2020
-hcl:#ceb3a1
+iyr:2010
+pid:741394760 ecl:blu eyr:2030
+byr:1934 hgt:68in hcl:#fffffd

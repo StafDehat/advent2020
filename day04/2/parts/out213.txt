@@ -1,4 +1,3 @@
 
-hgt:190cm iyr:1943
-pid:644021656 hcl:#6b621c
-ecl:oth eyr:2021 byr:1923
+ecl:hzl hgt:169cm
+hcl:z eyr:2035 pid:620999812 byr:1998

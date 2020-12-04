@@ -1,3 +1,2 @@
 
-hcl:#341e13 hgt:156cm iyr:2020 pid:299213638
-byr:1947 ecl:hzl eyr:2023
+hgt:181cm byr:1966 eyr:2022 hcl:#888785 ecl:amb pid:692426080

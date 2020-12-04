@@ -1,5 +1,3 @@
 
-hgt:166cm eyr:2029 iyr:2015
-hcl:#c0946f ecl:brn
-byr:1964
-pid:469449137
+iyr:2013 hgt:65in byr:1937 hcl:#fffffd
+ecl:blu eyr:2028 pid:777520867

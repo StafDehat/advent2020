@@ -1,4 +1,3 @@
 
-iyr:2016 hgt:182cm
-byr:1966 ecl:grn eyr:2022
-hcl:#fffffd pid:061720787
+iyr:2016 ecl:gry byr:1964 hcl:526fbd eyr:2023 pid:981371510
+hgt:71cm

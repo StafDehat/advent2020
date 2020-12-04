@@ -1,5 +1,2 @@
 
-pid:4354408888 iyr:2012
-hcl:#b6652a cid:104
-hgt:96 eyr:2020
-byr:1933 ecl:amb
+byr:1969 ecl:amb pid:770110016 iyr:2012 hgt:193cm hcl:#7d3b0c eyr:2020 cid:171

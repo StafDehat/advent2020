@@ -1,5 +1,3 @@
 
-byr:1969
-hgt:156cm iyr:2013 ecl:blu hcl:#a97842
-cid:183
-pid:960672229 eyr:2020
+iyr:2016 hgt:187cm byr:1980 pid:977322718
+eyr:2027 ecl:brn hcl:#ceb3a1

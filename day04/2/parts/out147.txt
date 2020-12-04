@@ -1,3 +1,4 @@
 
-eyr:2040
-hgt:173in hcl:z pid:#654654 byr:2016 iyr:2022 ecl:#452d22
+byr:1935
+ecl:amb hcl:#fffffd pid:270076583 cid:128 hgt:60in iyr:2016
+eyr:2027

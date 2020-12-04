@@ -1,3 +1,2 @@
 
-pid:260101979 hgt:187cm eyr:2033 ecl:lzr
-byr:2020 hcl:1058ce cid:133 iyr:2012
+hcl:#602927 pid:277638047 byr:1944 hgt:178cm iyr:2019 eyr:2028 ecl:blu

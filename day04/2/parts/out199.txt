@@ -1,3 +1,4 @@
 
-hgt:184cm ecl:hzl
-cid:67 iyr:2020 eyr:2026 pid:168775568 byr:1944 hcl:#a97842
+ecl:hzl
+byr:1947
+hcl:#341e13 pid:466649892 eyr:2030 hgt:164cm iyr:2015

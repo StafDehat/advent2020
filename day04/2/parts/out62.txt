@@ -1,4 +1,3 @@
 
-byr:1990 hgt:179cm
-pid:885359438 eyr:2028 iyr:2010 ecl:amb
-hcl:#67067e
+hgt:176cm
+byr:1999 ecl:oth hcl:#5e0906 pid:101108193 eyr:2029

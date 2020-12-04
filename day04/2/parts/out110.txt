@@ -1,4 +1,6 @@
 
-eyr:2027 byr:1956
-pid:193087729 hcl:#ceb3a1
-cid:213 hgt:193cm ecl:oth
+byr:1946 ecl:gry pid:579575823
+hgt:170cm
+iyr:2015
+eyr:2029
+hcl:#7d3b0c cid:88

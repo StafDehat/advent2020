@@ -1,4 +1,6 @@
 
-ecl:amb
-hgt:118 byr:1981 iyr:2019
-hcl:#a97842 eyr:2021 pid:270790642
+hgt:154cm
+eyr:2022 pid:516617153
+ecl:amb byr:1993
+iyr:2020
+hcl:#341e13

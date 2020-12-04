@@ -1,5 +1,3 @@
 
-pid:472940417 eyr:1960
-hgt:181cm hcl:#c0946f cid:269
-byr:2014
-iyr:1956
+cid:346 iyr:2019 pid:335209743 hgt:178cm byr:1993
+ecl:hzl hcl:#341e13 eyr:2030

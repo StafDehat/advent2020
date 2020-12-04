@@ -1,3 +1,3 @@
 
-eyr:2024 hcl:#cfa07d ecl:brn
-iyr:2019 byr:1993 hgt:156cm pid:449484188
+byr:1969 pid:524832668 hcl:#efcc98
+ecl:oth iyr:2019 eyr:2029

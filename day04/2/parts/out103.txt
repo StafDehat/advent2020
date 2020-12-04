@@ -1,4 +1,3 @@
 
-iyr:2019 cid:172
-hgt:152cm
-eyr:2022 ecl:oth hcl:#602927 byr:1960
+byr:1934 hcl:#341e13 pid:410490656 cid:66 ecl:grt eyr:2028 hgt:188cm
+iyr:2014

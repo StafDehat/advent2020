@@ -1,4 +1,6 @@
 
-eyr:2023
-byr:1969 iyr:2010 hgt:163cm hcl:#a97842 pid:570942274
-ecl:blu
+hcl:#c0946f
+byr:1965
+eyr:2023 pid:289861622 ecl:gry
+hgt:185cm
+iyr:2012

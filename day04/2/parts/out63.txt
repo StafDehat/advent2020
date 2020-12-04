@@ -1,4 +1,2 @@
 
-byr:1945 hcl:#866857 eyr:2022 iyr:2019
-pid:708146656 cid:65
-hgt:172cm ecl:brn
+hgt:168in pid:8803058749 byr:2013 hcl:z iyr:2027

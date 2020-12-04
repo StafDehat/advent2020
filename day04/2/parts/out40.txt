@@ -1,5 +1,3 @@
 
-pid:404141049
-byr:1947 ecl:blu hgt:170cm iyr:2011
-eyr:2028
-hcl:#cfa07d
+iyr:2014
+byr:1959 hgt:150cm hcl:#602927 pid:948589059 eyr:2027 ecl:oth cid:215

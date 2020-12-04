@@ -1,3 +1,2 @@
 
-ecl:gry
-cid:270 hcl:#602927 iyr:2017 hgt:151cm eyr:2029 pid:051398739 byr:1954
+iyr:2013 ecl:blu cid:92 byr:1946 pid:150720364 hcl:#7d3b0c hgt:180cm eyr:2027

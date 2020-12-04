@@ -1,3 +1,5 @@
 
-byr:1932 eyr:2022 pid:367248062 hgt:182cm ecl:oth hcl:#c0946f
-iyr:2020
+hcl:#efcc98
+hgt:152cm pid:140347821
+cid:346
+eyr:2022 ecl:oth iyr:2010 byr:1931

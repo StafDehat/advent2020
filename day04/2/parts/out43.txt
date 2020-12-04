@@ -1,4 +1,4 @@
 
-hcl:#733820 hgt:66in eyr:1920
-ecl:oth byr:1941 pid:979460474 iyr:2010
-cid:247
+eyr:2027 hgt:188cm
+hcl:#873cdf iyr:2019 pid:738493109 byr:1979
+ecl:hzl

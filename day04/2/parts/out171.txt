@@ -1,4 +1,3 @@
 
-ecl:oth eyr:2030 pid:024655030
-hgt:184cm byr:1969
-hcl:#18171d
+cid:276 eyr:2020 iyr:2011 hgt:59in hcl:#6b5442 ecl:amb byr:1992
+pid:137604720

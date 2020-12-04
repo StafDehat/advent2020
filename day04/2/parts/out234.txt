@@ -1,5 +1,4 @@
 
-pid:304792392 hcl:487823 eyr:2020
-hgt:70cm byr:2024
-iyr:1953
-ecl:blu
+iyr:2016 hcl:#623a2f cid:152
+ecl:oth hgt:62in byr:1946
+eyr:2028 pid:007367220

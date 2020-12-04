@@ -1,5 +1,4 @@
 
-cid:74
-iyr:2010
-pid:014378493 hgt:174cm eyr:2020
-ecl:grn byr:1944
+iyr:2015
+pid:827722366 eyr:2024 hgt:188cm hcl:#ceb3a1 byr:1963
+ecl:oth

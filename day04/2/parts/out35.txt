@@ -1,5 +1,2 @@
 
-ecl:oth byr:1950 hgt:166cm pid:007352351
-hcl:#b6652a
-iyr:2020
-eyr:2024
+byr:1975 pid:7243957480 eyr:2028 hcl:#cfa07d iyr:2019 hgt:184cm ecl:blu

@@ -1,6 +1,4 @@
 
-eyr:2030
-iyr:2011
-ecl:grn pid:313741119
-hgt:161cm byr:1946
-hcl:#a97842
+eyr:2021 hcl:#18171d
+byr:1938 hgt:160cm iyr:2020
+pid:938987284 ecl:gry

@@ -1,3 +1,8 @@
 
-ecl:brn pid:930667228 cid:310 iyr:2020
-eyr:2027 hgt:160cm byr:1932 hcl:#c0946f
+byr:1981
+hgt:163cm
+ecl:brn
+hcl:#7d3b0c iyr:2016
+pid:500276094
+cid:98
+eyr:2029

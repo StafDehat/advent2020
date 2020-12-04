@@ -1,3 +1,6 @@
 
-eyr:2024 iyr:2019 pid:301205967
-cid:276 byr:1957 hcl:#3fec29 ecl:gry hgt:165cm
+byr:1947
+pid:190618020
+ecl:blu
+eyr:2023
+hgt:192cm iyr:2012 hcl:#b62955

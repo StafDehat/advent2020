@@ -1,4 +1,4 @@
 
-iyr:2023 hcl:a58381 pid:#401a29 eyr:1940
-byr:1920
-ecl:utc hgt:183cm
+hgt:154cm byr:1930 ecl:amb
+cid:101 hcl:#fffffd pid:919013176
+eyr:2024

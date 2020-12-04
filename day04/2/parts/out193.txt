@@ -1,4 +1,4 @@
 
-ecl:#2bc145 eyr:1963 iyr:2030
-cid:241 hcl:2fc384 hgt:156in pid:2899917140
-byr:2005
+ecl:hzl
+byr:1954 pid:146052548 cid:194 eyr:2030 hcl:#ceb3a1 hgt:183cm
+iyr:2013

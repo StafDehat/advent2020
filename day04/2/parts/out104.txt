@@ -1,7 +1,4 @@
 
-iyr:2019 pid:762312913
-eyr:2029
-ecl:hzl
-hcl:#6b5442
-byr:1940
-hgt:169cm cid:289
+byr:1932
+ecl:amb
+hgt:188cm eyr:2020 pid:29447176 iyr:1947 hcl:#a6304b

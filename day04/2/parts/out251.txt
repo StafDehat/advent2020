@@ -1,3 +1,4 @@
 
-ecl:grn hgt:171cm iyr:2017 hcl:#fffffd eyr:2029 byr:1946 pid:863414762
-cid:95
+hgt:190cm eyr:2026 ecl:grn
+iyr:2012
+hcl:#c0946f byr:1929

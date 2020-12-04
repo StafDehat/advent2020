@@ -1,3 +1,4 @@
 
-hcl:#888785 iyr:2015
-hgt:170cm pid:893805464 ecl:amb byr:1966 eyr:2028
+iyr:2010 eyr:2020 hcl:#866857
+byr:1934 pid:022785900
+hgt:161cm ecl:oth

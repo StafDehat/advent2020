@@ -1,6 +1,3 @@
 
-iyr:2010 cid:225
-ecl:hzl eyr:2027 pid:615545523
-hcl:#733820
-byr:1994
-hgt:166cm
+pid:093626459 eyr:2024 iyr:2018
+ecl:grn byr:1922 hgt:153cm

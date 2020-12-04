@@ -1,4 +1,4 @@
 
-cid:298 pid:641326891
-hgt:155cm hcl:#623a2f ecl:grn byr:1981 eyr:2025
-iyr:2010
+byr:1970 pid:810234340 iyr:2014 cid:247 eyr:2021 hgt:172cm
+hcl:#cfa07d
+ecl:blu

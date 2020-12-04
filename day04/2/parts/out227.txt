@@ -1,3 +1,5 @@
 
-byr:1987 hgt:66in
-eyr:2021 pid:876757018 iyr:2015 hcl:d596e4 ecl:hzl
+hgt:150cm
+hcl:#3a4c6e pid:027677435 ecl:hzl cid:256 byr:1960
+iyr:2015
+eyr:2026

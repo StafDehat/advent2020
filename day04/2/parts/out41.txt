@@ -1,2 +1,4 @@
 
-ecl:hzl byr:1938 pid:235085606 cid:180 hcl:8fb74c eyr:2021 hgt:73 iyr:2015
+eyr:2029
+hgt:171cm iyr:2019 hcl:#e9317f byr:1926
+ecl:gry

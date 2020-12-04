@@ -1,4 +1,3 @@
 
-hgt:192cm pid:874141668
-byr:1957 iyr:2015
-ecl:gry
+iyr:2016 pid:447434977 hgt:71in hcl:#733820
+eyr:2023 ecl:amb byr:1950

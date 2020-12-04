@@ -1,4 +1,3 @@
 
-iyr:2017
-byr:1985 cid:215
-ecl:blu hcl:#623a2f hgt:160cm pid:157856689 eyr:2030
+ecl:grn byr:1941 pid:273390626 hgt:166cm eyr:2024 iyr:2010
+hcl:#888785

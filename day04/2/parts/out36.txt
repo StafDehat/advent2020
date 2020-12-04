@@ -1,3 +1,2 @@
 
-hgt:165 eyr:2030 iyr:2027
-ecl:#1a34f1 pid:2894591864 byr:2024 hcl:z
+byr:1953 pid:807621409 eyr:2020 iyr:2017 hcl:#ceb3a1 ecl:blu hgt:157cm

@@ -1,3 +1,2 @@
 
-byr:1971 ecl:oth
-hgt:163cm eyr:2021 pid:040443396
+pid:976089116 byr:1920 eyr:2020 iyr:2011 hcl:#733820 hgt:166cm cid:330

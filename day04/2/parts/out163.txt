@@ -1,4 +1,3 @@
 
-hcl:47242b ecl:utc hgt:156
-pid:#9a9903 eyr:2030 iyr:1990
-byr:2011
+hgt:162cm
+byr:1922 eyr:2023 ecl:hzl pid:870409472 iyr:2012

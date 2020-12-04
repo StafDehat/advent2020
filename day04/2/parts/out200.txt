@@ -1,5 +1,3 @@
 
-hcl:#fffffd iyr:2016 pid:379463363
-ecl:oth
-hgt:179cm byr:1988
-eyr:2028
+hcl:#a97842 iyr:2016 eyr:2029
+byr:1921 hgt:191cm ecl:brn pid:776471818

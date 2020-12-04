@@ -1,4 +1,6 @@
 
-hgt:177cm
-byr:1955 pid:585735590 iyr:2010 ecl:grn eyr:2024
-hcl:#602927
+pid:896621814 hgt:179cm ecl:blu
+eyr:2027
+iyr:2014
+byr:1965
+hcl:#a97842

@@ -1,4 +1,4 @@
 
-hgt:190cm hcl:#c0946f pid:228444464 byr:1987
-iyr:2020 eyr:2030
-ecl:blu
+hcl:#ceb3a1 hgt:157cm byr:2002
+iyr:2017 cid:245 ecl:amb
+pid:142383109 eyr:2022

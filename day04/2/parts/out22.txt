@@ -1,5 +1,2 @@
 
-hcl:#7d3b0c
-pid:307828343 byr:2001
-cid:317 iyr:2013
-eyr:2029
+ecl:hzl byr:1979 hcl:#a97842 iyr:2019 eyr:2022 cid:91 hgt:164cm pid:371132831

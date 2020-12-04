@@ -1,4 +1,4 @@
 
-hcl:#b6652a pid:732272914 eyr:2030 hgt:183cm ecl:hzl
-byr:1934
-iyr:2018
+hcl:#b6652a
+byr:1943
+pid:323629477 cid:311 ecl:grn eyr:2030 hgt:182cm

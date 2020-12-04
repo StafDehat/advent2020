@@ -1,5 +1,4 @@
 
-ecl:amb eyr:2024
-byr:1965 iyr:2010 pid:094059049
-hcl:#fffffd
-hgt:168cm
+hcl:z
+byr:1947 pid:164cm hgt:146 ecl:hzl
+eyr:1976 iyr:2014 cid:160

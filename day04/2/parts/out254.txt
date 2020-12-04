@@ -1,5 +1,4 @@
 
-byr:1987
-hgt:155cm cid:99 ecl:grn iyr:2010
-hcl:#c0946f eyr:2023
-pid:431067921
+ecl:amb hgt:165cm
+byr:1953 hcl:#118493 pid:458049702 cid:99
+iyr:2019 eyr:2023

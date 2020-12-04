@@ -1,4 +1,3 @@
 
-hcl:#efcc98 pid:252639104 hgt:188cm
-byr:1998 iyr:2019 ecl:grn
-eyr:2023
+byr:1983 iyr:2026 hgt:182cm eyr:2029
+hcl:#623a2f ecl:hzl pid:373940630

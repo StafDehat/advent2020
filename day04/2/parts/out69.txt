@@ -1,5 +1,4 @@
 
-pid:792365221 iyr:2013 ecl:oth
-byr:1997
-hgt:170cm hcl:#efcc98
-eyr:2022
+hgt:180cm pid:178969784 eyr:2025 ecl:brn
+byr:1938 hcl:z
+iyr:2013

@@ -1,6 +1,2 @@
 
-iyr:2016 byr:1934 hcl:#b6652a
-hgt:162cm ecl:hzl
-cid:296
-pid:742610207
-eyr:2022
+pid:783635907 eyr:2020 hgt:186cm ecl:grn byr:1925 iyr:2013 hcl:#341e13

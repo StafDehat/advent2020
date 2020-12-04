@@ -1,5 +1,5 @@
 
-eyr:2027 ecl:#d72f9b hgt:162cm
-iyr:2018 hcl:#a97842
-byr:1945
-pid:131243258
+iyr:2015 ecl:amb eyr:2030
+hgt:156cm
+cid:301 hcl:#18171d pid:677032916
+byr:1957

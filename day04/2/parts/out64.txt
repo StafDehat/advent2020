@@ -1,3 +1,4 @@
 
-ecl:hzl hgt:191cm
-cid:260 pid:010716679 iyr:2011 eyr:2029 byr:1920 hcl:#efcc98
+byr:1986
+eyr:2023 pid:108222056
+hcl:#c0946f iyr:2012 hgt:71in ecl:grn

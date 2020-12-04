@@ -1,4 +1,6 @@
 
-hcl:z pid:150cm ecl:utc iyr:1981
-eyr:2034
-hgt:156in cid:260 byr:2027
+cid:124
+pid:353288807 hcl:#7d3b0c
+byr:1963 eyr:2020 ecl:oth
+iyr:2020
+hgt:66in

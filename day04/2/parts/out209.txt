@@ -1,4 +1,6 @@
 
-pid:212659709 iyr:2018
-hgt:188cm
-hcl:#efcc98 byr:1974 eyr:2029 ecl:oth cid:244
+hgt:155cm
+pid:293590926
+hcl:#602927 eyr:2027 byr:1959
+iyr:2020
+ecl:amb

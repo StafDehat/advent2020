@@ -1,6 +1,4 @@
 
-ecl:xry
-cid:86
-hgt:172in
-byr:1972
-iyr:2015 hcl:#7d3b0c pid:833809421 eyr:2030
+hcl:#c0946f
+byr:1937 pid:208013639 eyr:2026 cid:309 hgt:155cm ecl:hzl
+iyr:2015

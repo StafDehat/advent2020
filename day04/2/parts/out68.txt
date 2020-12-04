@@ -1,2 +1,6 @@
 
-byr:2023 pid:#eb4c2a iyr:1939 ecl:grn hcl:06d729 hgt:73 eyr:2038
+iyr:2018
+hgt:174cm
+eyr:2024
+pid:478505944 byr:1938 hcl:#341e13 ecl:amb
+cid:181

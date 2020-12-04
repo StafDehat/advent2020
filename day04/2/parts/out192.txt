@@ -1,5 +1,3 @@
 
-hgt:67in
-byr:1967
-cid:333 hcl:#cfa07d
-iyr:2012 eyr:2024 ecl:hzl pid:538161833
+hcl:#341e13 iyr:2014 ecl:brn pid:823049712 eyr:2030 hgt:157cm
+byr:1924

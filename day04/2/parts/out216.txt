@@ -1,6 +1,4 @@
 
-eyr:2026
-ecl:gry
-pid:834980363 hcl:#733820 byr:1930
-hgt:175cm iyr:2018
-cid:214
+pid:#185456
+byr:2028 cid:148 iyr:1957 hcl:df9a7d ecl:grt hgt:101
+eyr:2036

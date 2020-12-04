@@ -1,4 +1,5 @@
 
-hcl:#b6652a pid:770238761 eyr:2029 byr:1934 iyr:2013
-ecl:blu cid:177
-hgt:184cm
+cid:173
+byr:1945 ecl:oth iyr:2010
+hgt:163cm hcl:#a97842 eyr:2025
+pid:418871498

@@ -1,2 +1,6 @@
 
-eyr:2020 ecl:brn hcl:#fffffd hgt:181cm pid:801311341 byr:1986 iyr:2010
+byr:2001
+hgt:186cm iyr:2019 ecl:brn
+eyr:2024
+hcl:#888785
+pid:218031016

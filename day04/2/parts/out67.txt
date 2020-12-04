@@ -1,3 +1,4 @@
 
-pid:535750794 hgt:191cm iyr:2016 hcl:#a97842 eyr:2029
-ecl:hzl byr:1923
+pid:366720897 hgt:187cm hcl:#866857
+byr:1967 cid:178 iyr:2014 ecl:amb
+eyr:2027

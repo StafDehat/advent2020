@@ -1,7 +1,4 @@
 
-eyr:2027 pid:790510379
-iyr:2013
-ecl:amb
-hgt:186cm
-hcl:#866857
-byr:1926
+byr:1950
+hcl:#341e13
+ecl:grn hgt:177cm cid:273 pid:473932418 eyr:2025 iyr:2010

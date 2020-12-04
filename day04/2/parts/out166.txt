@@ -1,5 +1,2 @@
 
-cid:169 iyr:2013 pid:355177646 byr:1988
-ecl:oth
-hcl:#cfa07d
-hgt:185cm eyr:2022
+byr:2001 hgt:185cm ecl:blu eyr:2020 iyr:2013 hcl:#888785

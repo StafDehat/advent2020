@@ -1,5 +1,3 @@
 
-ecl:amb
-eyr:2027 hgt:155cm pid:586151564 iyr:2010
-byr:1949
-hcl:#18171d
+cid:238 hgt:162cm eyr:2020 byr:1995
+ecl:amb iyr:2010 pid:700982289

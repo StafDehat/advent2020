@@ -1,2 +1,4 @@
 
-hcl:#602927 eyr:2028 ecl:gry iyr:2019 pid:583204134 byr:1966 hgt:178cm
+ecl:hzl
+hcl:#7d3b0c byr:2023
+pid:83552498 eyr:2025 hgt:65cm iyr:2010

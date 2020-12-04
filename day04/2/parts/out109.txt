@@ -1,3 +1,2 @@
 
-iyr:2015 pid:472000322 eyr:2021 byr:1977
-ecl:gry hgt:165cm cid:270
+eyr:2024 hcl:#7d3b0c byr:1930 cid:194 pid:216814907 hgt:63in ecl:gry

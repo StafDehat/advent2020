@@ -1,3 +1,5 @@
 
-eyr:2022 ecl:hzl hcl:#cfa07d hgt:168cm iyr:2015
-byr:1982 pid:645675448
+hcl:#efcc98 iyr:2015
+byr:1941
+pid:387565513
+ecl:gry cid:54 eyr:2026 hgt:166cm

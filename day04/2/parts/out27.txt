@@ -1,7 +1,5 @@
 
-iyr:1989
-byr:2008
-hgt:154cm
-eyr:2028 pid:280298169
-cid:208
-ecl:oth
+pid:769106108 cid:77
+eyr:2024
+hcl:#602927 hgt:164cm ecl:gry
+iyr:2017 byr:1947

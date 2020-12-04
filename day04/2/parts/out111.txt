@@ -1,6 +1,4 @@
 
-iyr:2014
-byr:1971 cid:96
-hgt:74in
-pid:136003336
-eyr:2020 ecl:hzl hcl:#efcc98
+byr:1936
+hcl:#6b5442 eyr:2020 cid:272 pid:752699834 iyr:2015 hgt:190cm
+ecl:grn

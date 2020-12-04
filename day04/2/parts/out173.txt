@@ -1,4 +1,6 @@
 
-iyr:1958 hgt:165cm pid:377677319
-ecl:grt eyr:2032 byr:2025
-hcl:bbfbe2
+cid:176
+pid:872650041 byr:1987 hcl:#623a2f
+hgt:69in
+ecl:oth
+eyr:2024 iyr:2015

@@ -1,4 +1,3 @@
 
-hgt:72cm
-iyr:2015 cid:234 byr:2013
-ecl:brn pid:9401866358
+hgt:187cm ecl:blu hcl:#fffffd
+pid:061318772 byr:1969 iyr:2012

@@ -1,4 +1,4 @@
-eyr:2028 iyr:2016 byr:1995 ecl:oth
-pid:543685203 hcl:#c0946f
-hgt:152cm
-cid:252
+eyr:2029 iyr:2013
+hcl:#ceb3a1 byr:1939 ecl:blu
+hgt:163cm
+pid:660456119

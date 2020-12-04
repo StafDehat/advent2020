@@ -1,4 +1,2 @@
 
-ecl:gry cid:338 eyr:2021 pid:777099878 hgt:193cm hcl:#efcc98
-byr:1945
-iyr:2015
+hcl:#341e13 byr:1952 ecl:blu iyr:2015 cid:230 eyr:2023 hgt:59in pid:955240866

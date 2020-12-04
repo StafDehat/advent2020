@@ -1,5 +1,5 @@
 
-hgt:189cm
-eyr:2026 pid:120642045 ecl:blu
-hcl:#602927 cid:177
-byr:1954 iyr:2012
+pid:041801541 ecl:brn
+hgt:184cm iyr:2013 hcl:#6b5442
+byr:1969
+eyr:2020

@@ -1,6 +1,2 @@
 
-eyr:2018 iyr:2029
-ecl:brn
-byr:2022 pid:#ff6df1
-hcl:z
-hgt:68cm
+iyr:2012 hcl:#866857 pid:814749853 hgt:156cm cid:155 byr:1924 eyr:2024 ecl:oth

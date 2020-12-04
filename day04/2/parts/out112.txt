@@ -1,4 +1,2 @@
 
-hcl:z pid:097595072 ecl:amb
-iyr:2015 byr:2021
-eyr:2039 hgt:188cm
+cid:85 iyr:2018 eyr:2025 ecl:hzl hgt:192cm byr:1996 pid:478812793 hcl:#602927

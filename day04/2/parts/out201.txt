@@ -1,3 +1,2 @@
 
-hcl:#cfa07d ecl:amb eyr:2030 pid:320360020
-iyr:2016 hgt:172cm byr:1961
+iyr:2014 pid:605101404 ecl:amb hcl:#7d3b0c byr:1991 eyr:2026 hgt:158cm

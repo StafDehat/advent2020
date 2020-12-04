@@ -1,6 +1,5 @@
 
-pid:980680460 byr:1962 ecl:blu
-iyr:2013
-hcl:#72cace
-eyr:2030
-hgt:180cm
+byr:1931
+ecl:oth eyr:2028 hgt:177cm
+hcl:#6b5442
+pid:494763488 iyr:2015 cid:293

@@ -1,5 +1,4 @@
 
-ecl:grt byr:1983 hcl:#cfa07d
-hgt:163cm
-eyr:1979
-iyr:1958 pid:796395720
+ecl:brn hgt:69in
+pid:368841807 byr:1971 eyr:2020 iyr:2020
+hcl:498a57

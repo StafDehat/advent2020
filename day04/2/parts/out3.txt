@@ -1,3 +1,5 @@
 
-hgt:167cm cid:210 ecl:brn pid:429131951 hcl:#cfa07d eyr:2029 iyr:2010
-byr:1945
+hgt:193cm
+iyr:2010 pid:214278931 ecl:grn byr:1953
+eyr:2021
+hcl:#733820

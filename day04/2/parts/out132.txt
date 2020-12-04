@@ -1,5 +1,6 @@
 
-ecl:utc hcl:#602927
-pid:#1408ff byr:1941
-cid:82
-iyr:2015 hgt:185cm eyr:2028
+ecl:hzl
+pid:975616547
+hgt:166cm
+iyr:2015 hcl:#efcc98 eyr:2020
+byr:1927

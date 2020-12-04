@@ -1,4 +1,5 @@
 
-byr:1971 hcl:z
-eyr:2035 pid:158cm
-ecl:#d3ec19
+eyr:2028 hcl:#18171d
+pid:264437557
+iyr:2014 byr:1987 hgt:168cm
+ecl:gry

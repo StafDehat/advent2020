@@ -1,4 +1,4 @@
 
-eyr:2027
-cid:124 ecl:amb hgt:165cm byr:1949
-pid:727126101 iyr:2010 hcl:#602927
+iyr:2025 byr:1999
+eyr:2024 hcl:#c0946f
+hgt:86

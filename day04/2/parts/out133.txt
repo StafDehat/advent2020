@@ -1,4 +1,4 @@
 
-iyr:2020 hgt:151cm eyr:2025
-byr:1934 hcl:#888785
-pid:396545094 ecl:oth
+byr:1960 cid:309 eyr:2022
+hcl:#a97842 pid:186837033
+iyr:2019 hgt:156cm

@@ -1,4 +1,3 @@
 
-pid:45938863
-hcl:49c7ce cid:349 hgt:181cm
-eyr:2023 ecl:grn iyr:2015 byr:1948
+byr:1954 cid:273 ecl:#915d48
+pid:004261180 hcl:#cfa07d iyr:2018 hgt:167cm eyr:2021

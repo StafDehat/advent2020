@@ -1,4 +1,3 @@
 
-hgt:190in
-hcl:z eyr:2029 pid:74228790
-iyr:2016 byr:2018 ecl:brn
+ecl:hzl pid:277988952
+eyr:2025 hgt:179cm byr:1992 cid:322

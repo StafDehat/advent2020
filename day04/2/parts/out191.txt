@@ -1,5 +1,4 @@
 
-hgt:161cm
-byr:2002
-hcl:#623a2f pid:535361632
-ecl:gry eyr:2021 iyr:2013
+eyr:2028 byr:1952
+pid:506339509 hcl:#602927 hgt:179cm
+ecl:grn

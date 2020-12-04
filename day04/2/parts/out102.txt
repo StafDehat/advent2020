@@ -1,2 +1,3 @@
 
-ecl:amb eyr:2030 hgt:171cm hcl:#efcc98 pid:800921581 cid:339 byr:1980 iyr:2017
+eyr:2027 hcl:#602927 iyr:2019 hgt:71in pid:368543014 ecl:brn
+byr:1991

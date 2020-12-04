@@ -1,5 +1,3 @@
 
-iyr:2011
-hgt:155in
-hcl:#ceb3a1 pid:118497416
-eyr:2029 byr:2011 ecl:oth
+iyr:2010 cid:163 byr:1944 ecl:grn pid:731085710
+hcl:#efcc98 hgt:159cm eyr:2027

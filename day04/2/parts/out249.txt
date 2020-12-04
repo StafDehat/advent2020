@@ -1,5 +1,2 @@
 
-ecl:grn
-byr:1966 pid:184245393 hgt:164cm
-eyr:2022
-iyr:2014 hcl:#866857
+eyr:2023 byr:1974 pid:067761346 cid:178 ecl:hzl iyr:2020 hgt:168cm hcl:#6b5442

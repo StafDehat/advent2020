@@ -1,4 +1,6 @@
 
-hcl:#efcc98
-pid:164cm
-iyr:2010 cid:194 hgt:71cm byr:1923 eyr:2026
+ecl:brn
+hcl:#c0946f hgt:158cm
+eyr:2020
+pid:548013549 cid:107
+iyr:2014 byr:1966

@@ -1,3 +1,5 @@
 
-hcl:#b3f2f0 pid:204254353 cid:169 eyr:2020
-iyr:2013 hgt:172cm ecl:blu byr:1950
+ecl:amb iyr:2010
+byr:1967
+eyr:2021 cid:128 pid:104999760 hgt:162cm
+hcl:#c83b73

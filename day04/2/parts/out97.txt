@@ -1,5 +1,4 @@
 
-hgt:157cm
-ecl:grn
-byr:2000
-pid:734707993 hcl:#341e13 iyr:2020
+iyr:1963 eyr:2034
+ecl:#698113 hgt:76cm
+hcl:z pid:174cm byr:2029

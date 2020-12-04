@@ -1,6 +1,5 @@
 
-iyr:2018 eyr:2026 pid:523863237
-hgt:187cm
-ecl:oth
-byr:1944
-hcl:#a97842
+iyr:2010 byr:1960 pid:556639427 ecl:grn
+hgt:152cm
+eyr:2022
+hcl:#623a2f

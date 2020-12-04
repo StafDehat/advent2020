@@ -1,4 +1,2 @@
 
-eyr:2030
-pid:899973263 hgt:178cm byr:1987 hcl:#cfa07d iyr:2012
-ecl:amb
+byr:1998 pid:239200796 hcl:#957b4b hgt:171cm iyr:2011

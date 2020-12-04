@@ -1,4 +1,5 @@
 
-cid:239
-eyr:2038 ecl:lzr hcl:z iyr:1987 pid:4632768239
-hgt:162in
+ecl:brn
+pid:835022632 hgt:174cm
+byr:1928 hcl:#341e13 eyr:2028
+cid:176 iyr:2011

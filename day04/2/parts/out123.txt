@@ -1,4 +1,4 @@
 
-byr:1925 cid:179 ecl:hzl pid:360641953 eyr:2030
-hgt:171in iyr:2015
-hcl:#602927
+ecl:oth
+byr:1971 hcl:#a97842 pid:673909751 hgt:152cm eyr:2026
+iyr:2017
