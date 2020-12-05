@@ -1,0 +1,1 @@
+for x in $( cat input ); do echo $((2#$(tr 'FBLR' '0101' <<<"${x}") )); done | sort -n

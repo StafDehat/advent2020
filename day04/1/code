@@ -1,13 +1,15 @@
 #!/bin/bash
 
-cat input | 
+# Split input file into one file per passport
+rm -f parts/out*.txt
+cat "${1}" | 
   awk '/^\s*$/{n++}
     {print >"parts/out"n".txt"}
     END {print n}'
 
-cd parts
+# Check each passport
 count=0
-for x in *; do
+for x in parts/*; do
   grep -q 'byr:' "$x" || continue
   grep -q 'iyr:' "$x" || continue
   grep -q 'eyr:' "$x" || continue
