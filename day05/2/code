@@ -1,3 +1,7 @@
 #!/bin/bash
 
 for x in $( cat input ); do echo $((2#$(tr 'FBLR' '0101' <<<"${x}") )); done | sort -n
+
+# I didn't code the solution here - I just pasted the data output into a spreadsheet, starting at
+#   line #91 'cause my first seat ID was #91, then I pgdn until the line# didn't match the data
+#   anymore, then scanned up to find where it skipped one.
