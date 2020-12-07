@@ -1,9 +1,15 @@
 #!/bin/bash
 # Usage: $0 input-file
 
+goalSum=2020
+
 # Create an array from only the numeric lines in input file
 declare -a input
-input=( $( grep -P '^\s*-?\s*\d+\s*$' "${1}" ) )
+input=( $(
+  for x in $( grep -P '^\s*-?\s*\d+\s*$' "${1}" ); do
+    [[ ${x} -le ${goalSum} ]] && echo "${x}"
+  done
+) )
 
 # Count how many items in that array:
 numItems="${#input[@]}"
@@ -19,7 +25,7 @@ for x in $( seq 0 $((numItems-1)) ); do
   for y in $( seq $((x+1)) $((numItems-1)) ); do
     numAtPosY=${input[${y}]}
     sum=$(( numAtPosX + numAtPosY ))
-    if [[ ${sum} -eq 2020 ]]; then
+    if [[ ${sum} -eq ${goalSum} ]]; then
       echo $(( numAtPosX * numAtPosY ))
       break 2
     fi
