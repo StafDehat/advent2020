@@ -13,23 +13,39 @@ input=( $(
 
 #
 # Do an O(n) pre-process, to reduce n before we get to O(n^3)
-function getSmallestTwo() {
+function getBiggerTwoOfSmallestThree() {
   local -a lst
   lst=( ${@} )
+
+  # The BASH way:
+#  for x in ${lst[@]}; do
+#    echo $x
+#  done | sort -n | head -n 3 | tail -n 2 | xargs echo
+#  return
+
+  # The everyone-else way:
   local a=${goalSum}
   local b=${goalSum}
+  local c=${goalSum}
+
   for x in ${lst[@]}; do
     if [[ $x -lt $a ]]; then
       a=${x}
     elif [[ $x -lt $b ]]; then
       b=${x}
+    elif [[ $x -lt $c ]]; then
+      c=${x}
     fi
   done
-  echo ${a} ${b}
+  {
+    echo ${a};
+    echo ${b};
+    echo ${c};
+  } | sort -n | tail -n 2 | xargs echo
 }
-read a b < <(getSmallestTwo ${input[@]})
+read a b < <(getBiggerTwoOfSmallestThree ${input[@]})
 largestPossible=$(( goalSum - (a+b) ))
-echo "Smallest two numbers in list are ${a} & ${b}"
+echo "Bigger 2 of smallest 3 numbers in list are ${a} & ${b}"
 echo "2020 - [those] = ${largestPossible}, so any number >${largestPossible}, is too big"
 declare -a newInput
 for x in ${input[@]}; do
