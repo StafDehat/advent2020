@@ -21,6 +21,7 @@ for x in $( seq 0 $((numItems-1)) ); do
     sum=$(( numAtPosX + numAtPosY ))
     if [[ ${sum} -eq 2020 ]]; then
       echo $(( numAtPosX * numAtPosY ))
+      break 2
     fi
   done
 done
