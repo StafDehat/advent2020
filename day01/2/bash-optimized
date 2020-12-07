@@ -18,10 +18,10 @@ function getBiggerTwoOfSmallestThree() {
   lst=( ${@} )
 
   # The BASH way:
-#  for x in ${lst[@]}; do
-#    echo $x
-#  done | sort -n | head -n 3 | tail -n 2 | xargs echo
-#  return
+  for x in ${lst[@]}; do
+    echo $x
+  done | sort -n | head -n 3 | tail -n 2 | xargs echo
+  return
 
   # The everyone-else way:
   local a=${goalSum}
