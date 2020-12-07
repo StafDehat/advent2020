@@ -1,0 +1,76 @@
+#!/usr/bin/env python
+
+class Bag(object):
+  # Color is essentially the "Bag ID" - a unique identifier
+  color = ""
+  # My contents, by colour & count:
+  contents = {}
+  # A list of Bag IDs (colors) that contain me
+  foundWithin = set()
+
+  def __init__(self, color):
+    self.color = color
+    self.contents = {}
+    self.foundWithin = set()
+  # END __init__()
+
+  def addContent(self, count, color):
+    self.contents[color] = count
+  # END addContent()
+# END class Bag()
+
+# This will keep track of all known Bags:
+bagDict = {}
+
+# I'm too lazy to code something to actually read the input, so I just hard-coded
+#  some test data here:
+# WHILE READ INPUT LOOP
+bagObj = Bag("shiny gold")
+bagObj.addContent(1, "red")
+bagDict[bagObj.color] = bagObj
+
+bagObj = Bag("red")
+bagObj.addContent(2, "blue")
+bagObj.addContent(3, "green")
+bagDict[bagObj.color] = bagObj
+
+bagObj = Bag("blue")
+bagObj.addContent(1, "yellow")
+bagDict[bagObj.color] = bagObj
+
+bagObj = Bag("yellow")
+bagDict[bagObj.color] = bagObj
+
+bagObj = Bag("green")
+bagObj.addContent(2, "yellow")
+bagDict[bagObj.color] = bagObj
+# END WHILE READ INPUT LOOP
+
+# Print 'contains' data:
+for key in bagDict:
+  bagObj = bagDict[key]
+  for color, count in bagObj.contents.items():
+    print(bagObj.color, "contains", count, color)
+  # END for
+# END for
+
+# Now that all bags are instantiated,
+# create reverse-contains entries (ie: foundWithin)
+for key in bagDict:
+  bagObj = bagDict[key]
+  for color, count in bagObj.contents.items():
+    bagDict[color].foundWithin.add(
+      bagObj.color
+    )
+  # END for
+# END for
+
+# Print 'foundWithin' data:
+for key in bagDict:
+  bagObj = bagDict[key]
+  for color in bagObj.foundWithin:
+    print(bagObj.color, "can be found within", color)
+  # END for
+# END for
+
+

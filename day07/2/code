@@ -68,6 +68,7 @@ function countContents() {
 
 
 bagsInGold=$( countContents "shiny gold" )
-echo "${bagsInGold} inside the shiny gold bag, plus the shiny gold bag itself."
+echo "You have ${bagsInGold} bags within the shiny gold bag,"
+echo "  plus the shiny gold bag itself."
 
 
