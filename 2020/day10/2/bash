@@ -6,6 +6,9 @@ function debug() {
   echo "${@}" >&2
 }
 
+#
+# This works, but it's real inefficient
+# So inefficient, in fact, that it may never finish
 function countPaths() {
   local steps=( ${@} )
   #debug "Sub-list: ${steps[@]}"
