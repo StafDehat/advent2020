@@ -2,8 +2,8 @@
 
 inFile="${1}"
 
-#myStart=$( head -n 1 "${inFile}" | grep -Po '\d+' )
-declare -a departures
+myStart=$( head -n 1 "${inFile}" | grep -Po '\d+' )
+declare -a busIds
 departures=( $( grep ',' ${inFile} |
                   grep -Po '(\d+|x),?' |
                   tr -d ',' ) )
@@ -23,8 +23,8 @@ function gcd() {
   fi
   gcd ${2} $(( ${1} % ${2} ))
 }
-alias gcf=gcd
 
+# Least-common multiple
 function lcm() {
   if (( ${2} == 0 )); then
     echo 0; return
@@ -40,7 +40,6 @@ function lcm() {
   shift 1
   lcm ${a} $( lcm ${@} )
 }
-alias lcf=lcm
 
 
 # Indexed by busID, offsets from t=0
@@ -58,26 +57,38 @@ debug "Minutes modded by: ${#departures[@]}"
 tZeroBus=${departures[0]}
 debug "Solution must be a multiple of ${tZeroBus}"
 
-incr=1
-t=0
-while true; do
-  t=$(( t + incr ))
-  #debug "Testing t=${t}"
+# Calculate the minimum-valid increase per check
+declare -a incrs
+incrs=$( 
+  echo "${tZeroBus}"
   for busId in "${departures[@]}"; do
-    # "x" is just ignored - skip it
     [[ "${busId}" == "x" ]] && continue
-    # If the offset for busId is correct, update incr so we only increase
-    #   by shared multiples, to avoid breaking the already-solved stuff.
+    echo $(( ( busId/tZeroBus ) * tZeroBus ))
+  done | sort -nu
+)
+incr=$( lcm ${incrs[@]} )
+debug "Suggested increment: ${incr}"
+
+read -p "About to start the big loop"
+
+incr=${tZeroBus}
+t=${tZeroBus}
+x=0
+while true; do
+  x=$((x+1))
+  t=$(( t + incr ))
+  debug "Testing t=${t}"
+  for busId in "${departures[@]}"; do
+    [[ "${busId}" == "x" ]] && continue
+    #debug "If t=${t}, then BusID ${busId} departs at t=$((t%busId))"
     if [[ $(( ( t+${offsets[${busId}]} ) % busId )) -eq 0 ]]; then
-      #debug "Bus ${busId} would leave at the correct time."
-      incr=$( lcm ${incr} ${busId} )
-      debug "Solution must be a multiple of ${incr}"
+      debug "Bus ${busId} would leave at the correct time."
     else
-      # BusID doesn't jive with this time interval - no sense trying the others
+      debug "Bus ${busId} needs to leave at t=+${offsets[${busId}]}, but would actually be $(( ( t+${offsets[${busId}]} ) % busId ))"
       continue 2
     fi
-  done # End BusID loop
+  done
   break
-done # End 't' loop
+done
 
-echo "Pattern correct at t=${t}"
+
