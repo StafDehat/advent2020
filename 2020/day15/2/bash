@@ -21,14 +21,13 @@ for num in ${input[@]}; do
 done
 last=${num}
 
-echo "${index}"
 # The next number will be zero, because the explicit input had no duplicates:
 next=0
 
 stopAt=30000000
 #stopAt=2020
 #stopAt=100000
-stopAt=10
+#stopAt=10
 
 while true; do
   # When index=2020, we've already inserted that many entries
