@@ -49,21 +49,14 @@ function getNeighbours() {
 
   for x in $(seq $((xPos-1)) $((xPos+1))); do
     # Don't read outside the plane
-    [[ "${x}" -lt 0 ]] && continue
-    [[ "${x}" -ge "${numCols}" ]] && continue
+    [[ "${x}" -lt 0 ]] || [[ "${x}" -ge "${numCols}" ]] && continue
     for y in $(seq $((yPos-1)) $((yPos+1))); do
       # Don't read outside the plane
-      [[ "${y}" -lt 0 ]] && continue
-      [[ "${y}" -ge "${numRows}" ]] && continue
+      [[ "${y}" -lt 0 ]] || [[ "${y}" -ge "${numRows}" ]] && continue
       # I'm not my own neighbour:
-      if [[ "${y}" -eq "${yPos}" ]] &&
-         [[ "${x}" -eq "${xPos}" ]]; then
-        continue
-      fi
+      [[ "${y}" -eq "${yPos}" ]] && [[ "${x}" -eq "${xPos}" ]] && continue
       # Floors don't really count as neighbours
-      if [[ "${planeState[${x},${y}]}" == '.' ]]; then
-        continue
-      fi
+      [[ "${planeState[${x},${y}]}" == '.' ]] && continue
       echo "${x} ${y}"
     done
   done
@@ -90,6 +83,7 @@ function countOccupiedNeighbours() {
   local yPos="${2}"
   local neighbourCoords="$( getNeighbours "${xPos}" "${yPos}" )"
   local occupiedNeighbours=0
+  # Optimize this with a summed-area-table
   while read x y; do
     if isOccupied "${x}" "${y}"; then
       occupiedNeighbours=$(( occupiedNeighbours+1 ))
