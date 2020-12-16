@@ -1,24 +1,5 @@
 #!/bin/bash
 
-inFile="${1}"
-
-#
-# Read input - build the "plane" layout
-declare -A planeState
-numCols=$( head -n 1 "${inFile}" | tr -d '\n' | wc -c )
-numRows=$( wc -l < "${inFile}" )
-colNum=0
-rowNum=0
-while read LINE; do
-  colNum=0
-  while read -n1 char; do
-    planeState[${colNum},${rowNum}]="${char}"
-    colNum=$((colNum+1))
-  done <<<"${LINE}"
-  rowNum=$((rowNum+1))
-done < <( cat "${inFile}" )
-
-
 #------------------#
 # Helper functions #
 #------------------#
@@ -30,20 +11,43 @@ function debug() {
   echo "${ts}: ${@}" >&2
 }
 
+function sum() {
+  local input
+  if [[ "${#}" -gt 0 ]]; then
+    input=${@}
+  else
+    input=$( cat )
+  fi
+  {
+    echo -n "0";
+    for x in ${input}; do
+      echo -n " + ${x}"
+    done;
+    echo;
+  } | bc -l
+}
+
+#
+# Convert 2d coords to 1d array index
+# Note: We never actually call this function, because in-line math is faster.
+#   This function exists primarily as documentation
+function get1dIndex() {
+  local x="${1}"
+  local y="${2}"
+  echo $(( y*numCols + x ))
+}
+
 #
 # Display the plane's current state
 function printPlane() {
   for ((y=0;y<numRows;y++)) do
-    for ((x=0;x<numCols;x++)) do
-      echo -n "${planeState[$x,$y]}"
-    done
-    echo
+    echo "${planeState[@]:$((y*numCols)):${numCols}}"
   done
 }
 
 #
 # Take a seat's coords, and return a list of neighbours' coords
-function getNeighbours() {
+function getNeighbourIndices() {
   local xPos="${1}"
   local yPos="${2}"
 
@@ -56,8 +60,10 @@ function getNeighbours() {
       # I'm not my own neighbour:
       [[ "${y}" -eq "${yPos}" ]] && [[ "${x}" -eq "${xPos}" ]] && continue
       # Floors don't really count as neighbours
-      [[ "${planeState[${x},${y}]}" == '.' ]] && continue
-      echo "${x} ${y}"
+      [[ "${planeState[$((yPos*numCols+xPos))]}" == '.' ]] && continue
+
+      # Exposing the 1d-array implementation for efficiency's sake now
+      echo $(( y*numCols + x ))
     done
   done
 }
@@ -66,9 +72,8 @@ function getNeighbours() {
 # Take a seat's coords, return whether it's empty or not
 # "Floor" spaces are considered empty.
 function isOccupied() {
-  local xPos="${1}"
-  local yPos="${2}"
-  case "${planeState[${xPos},${yPos}]}" in
+  local seatIndex="${1}"
+  case "${planeState[${seatIndex}]}" in
     'L') return 1;;
     '#') return 0;;
     '.') return 1;;
@@ -81,14 +86,13 @@ function isOccupied() {
 function countOccupiedNeighbours() {
   local xPos="${1}"
   local yPos="${2}"
-  local neighbourCoords="$( getNeighbours "${xPos}" "${yPos}" )"
-  local occupiedNeighbours=0
   # Optimize this with a summed-area-table
-  while read x y; do
-    if isOccupied "${x}" "${y}"; then
+  local occupiedNeighbours=0
+  while read seatIndex; do
+    if isOccupied "${seatIndex}"; then
       occupiedNeighbours=$(( occupiedNeighbours+1 ))
     fi
-  done <<<"${neighbourCoords}"
+  done <<<"$( getNeighbourIndices ${xPos} ${yPos} )"
   echo "${occupiedNeighbours}"
 }
 
@@ -97,8 +101,10 @@ function countOccupiedNeighbours() {
 function getNextState() {
   local xPos="${1}"
   local yPos="${2}"
-  local oldState="${planeState[${xPos},${yPos}]}"
+  local oldState="${planeState[$((yPos*numCols+xPos))]}"
 
+  # Note: If 1=occupied and 0=not...
+  #  I could x=$(( -x+1 ))
   case "${oldState}" in
     'L') # Empty seat logic
       # If a seat is empty (L) and there are no occupied
@@ -127,15 +133,26 @@ function getNextState() {
   # Occupied seat logic:
 }
 
+
+#-----------------#
+#---Parse input---#
+#-----------------#
+
+inFile="${1}"
+
 #
-# Copy nextPlaneState into planeState
-function changeSeats() {
-  for ((y=0;y<numRows;y++)) do
-    for ((x=0;x<numCols;x++)) do
-      planeState[${x},${y}]=${nextPlaneState[${x},${y}]}
-    done
-  done
-}
+# Read input - build the "plane" layout
+declare -a planeState
+numCols=$( head -n 1 "${inFile}" | tr -d '\n' | wc -c )
+numRows=$( wc -l < "${inFile}" )
+seatIndex=0
+while read LINE; do
+  while read -n1 char; do
+    [[ -z "${char}" ]] && continue
+    planeState[${seatIndex}]="${char}"
+    seatIndex=$((seatIndex+1))
+  done <<<"${LINE}"
+done < <( cat "${inFile}" )
 
 
 #----------------#
@@ -145,41 +162,26 @@ function changeSeats() {
 debug "Num Rows: ${numRows}"
 debug "Num Cols: ${numCols}"
 
-declare -A nextPlaneState
+declare -a nextPlaneState
 while true; do
   debug "Current state of plane:"
   printPlane
 
   # Have each seat figure out its next state
   # Note: This could be parallelized
-  seatsChanging="False"
   for ((y=0;y<numRows;y++)) do
     for ((x=0;x<numCols;x++)) do
-      nextState=$( getNextState ${x} ${y} )
-      nextPlaneState[${x},${y}]=${nextState}
-      if [[ "${planeState[${x},${y}]}" != "${nextState}" ]]; then
-        seatsChanging="True"
-      fi
+      nextPlaneState[$((y*numCols+x))]=$( getNextState ${x} ${y} )
     done
   done
 
   # If no seats want to change, we're stable - exit the loop
-  if [[ "${seatsChanging}" == "False" ]]; then
-    break
-  fi
+  cmp -s <(echo ${planeState[@]}) <(echo ${nextPlaneState[@]}) && break
 
   # Any seat that wants to change, should do so now:
-  changeSeats
+  planeState=( ${nextPlaneState[@]} )
 done
 
-
-occupiedSeats=0
-for ((y=0;y<numRows;y++)) do
-  for ((x=0;x<numCols;x++)) do
-    if [[ "${planeState[${x},${y}]}" == "#" ]]; then
-      occupiedSeats=$(( occupiedSeats + 1 ))
-    fi
-  done
-done
-
+occupiedSeats=$( echo "${planeState[@]}" | tr '#L.' '100' | sum )
 echo "Total occupied: ${occupiedSeats}"
+
