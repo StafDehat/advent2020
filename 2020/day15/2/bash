@@ -2,7 +2,7 @@
 
 inFile="${1}"
 
-declare -A lastSpoken
+declare -a lastSpoken
 index=1
 
 function debug() {
@@ -40,7 +40,7 @@ while true; do
     next=$(( index - ${lastSpoken[${last}]} ))
   fi
 
-  debug "Speaking number ${index}: ${last}"
+  #debug "Speaking number ${index}: ${last}"
 
   lastSpoken[${last}]=${index}
   index=$(( index + 1 ))
