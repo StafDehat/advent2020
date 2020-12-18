@@ -46,14 +46,17 @@ function parse() {
     expr="$( sed -r 's/\([^\(\)]*\)/'"${parenResult}"'/' <<<"${expr}" )"
   done
 
-  # There must be operators (+, *) - do them, left to right
+  # There must be operators (+, *) - do plus, delegate mult
   expr=( $( tokenize "${expr}" ) )
   local left="${expr[0]}"
   local op="${expr[1]}"
   local right="${expr[2]}"
   local remains="${expr[@]:3}"
-
-  parse "$(( ${left} ${op} ${right} )) ${remains[@]}"
+  if [[ "${op}" == '+' ]]; then
+    parse "$(( ${left} + ${right} )) ${remains[@]}"
+  else # ie: '*'
+    echo $(( "${left} * $( parse "${right} ${remains[@]}" )" ))
+  fi
 }
 
 
