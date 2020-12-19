@@ -11,23 +11,12 @@ grep -P '^\d+:' "${inFile}" | sort -n > ruleFile
 #   the definition of X.
 lineNum=0
 while true; do
-  # We can't do a "while read" loop here, because that would open
-  #  a file handle to the old, unchanged file.  Every edit we make
-  #  with sed or perl would actually copy the OG file, and edit
-  #  the copy - but we'd keep reading from the original.  We want
-  #  every line to be read from the just-edited "file".
   lineNum=$((lineNum+1))
   LINE=$( sed -n "${lineNum}p" ruleFile )
   [[ -z "${LINE}" ]] && break
-
   ruleNum=$( cut -d: -f1 <<<"${LINE}" )
-  ruleStr=$( cut -d\  -f2- <<<"${LINE}" )
-
-  # Gotta sed repeatedly, 'cause of overlapping matches
-  # ie: ( 4 4 | 5 5 ), & 's/ 4 / /g'
-  #sed -i -r "s/\s${ruleNum}(\s|$)/ ( ${ruleStr} ) /g" ruleFile
-  # TL;DR: That sucks - use perl instead:
-  perl -pi -e "s/(?<=\s)${ruleNum}(?=\s|$)/( ${ruleStr} )/g" ruleFile
+  ruleDef=$( cut -d\  -f2- <<<"${LINE}" )
+  perl -pi -e "s/(?<=\s)${ruleNum}(?=\s|$)/( ${ruleDef} )/g" ruleFile
 done
 
 # Turn rule 0 into a regex
@@ -37,13 +26,8 @@ rule0=$( grep '^0:' ruleFile |
            sed 's/(\([ab]\))/\1/g' )
 
 # Grep for that regex
-# This works, but rule0 ends up too long for grep's built-in PCRE stack limit
-#grep -cP "^\s*${rule0}\s*$" "${inFile}"
-# So... again, perl it is:
 valid=$( perl -ne "/^${rule0}$/ && print" "${inFile}" )
 
-echo "Valid messages: "
-echo "${valid}"
-
+echo -n "Valid messages: "
 wc -l <<<"${valid}"
 
