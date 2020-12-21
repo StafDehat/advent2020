@@ -17,7 +17,7 @@ function trimEdges() {
   local prefix=""
   local suffix=""
   local count=0
-  debug "Trimming line: ${LINE}"
+  #debug "Trimming line: ${LINE}"
   while true; do
     # This regex is so complex, that most tools can't handle it.
     # "grep -P" breaks.  Sed breaks.  pcregrep is wonky.
@@ -33,10 +33,10 @@ function trimEdges() {
     [[ "${prefix}" == "${LINE}" ]] && break
 
     LINE=$( sed -e "s/^${prefix}//" -e "s/${suffix}$//" <<<"${LINE}" )
-    debug "Removed ${prefix} & ${suffix} from ends"
+    #debug "Removed ${prefix} & ${suffix} from ends"
     count=$((count+1))
   done
-  debug "Trimmed ${count} times, resulting in ${LINE}"
+  #debug "Trimmed ${count} times, resulting in ${LINE}"
   echo "${LINE}"
 }
 
@@ -89,9 +89,9 @@ while read LINE; do
   # After trimming, we should be left with 1 or more rule42's:
   if pcregrep -q "^(${rule42})+$" <<<"${LINE}"; then
     numValid=$((numValid+1))
-    echo "Valid: ${LINE}"
-  else
-    echo "INVALID: ${LINE}"
+  #  echo "Valid: ${LINE}"
+  #else
+  #  echo "INVALID: ${LINE}"
   fi
 done <<<"${subValid}"
 
