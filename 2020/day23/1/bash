@@ -1,0 +1,16 @@
+#!/bin/bash
+
+input="952316487"
+sample="389125467"
+
+declare -a cups
+cups=( $(sed 's/\(.\)/ \1/g' <<<"${input}") )
+
+moves=0
+currentIndex=0
+destIndex=0
+destCup=
+while [[ ${count} -lt 100 ]]; do
+  
+  moves=$((moves+1))
+done
