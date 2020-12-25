@@ -32,7 +32,6 @@ inFile="${1}"
 numCups=1000000
 numMoves=10000000
 #        ..---...
-numCups=200
 numMoves=100000
 
 unset next cupInput
