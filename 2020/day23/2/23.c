@@ -37,17 +37,18 @@ int main() {
   for (int x=0; x<sizeof(cupInput)/sizeof(int)-1; x++) {
     thisCup=cupInput[x];
     nextCup=cupInput[x+1];
-    //printf("x=%i, Inserting next[%i] = %i\n", x, thisCup, nextCup);
+    printf("Inserting next[%i] = %i\n", thisCup, nextCup);
     next[thisCup]=nextCup;
   }
 
   // The last cup we inserted is pointing at a nonexistent cup - fix that
-  printf("Correcting position %i, =%i\n",
+  printf("Inserting edge case, next[%i]=%i\n",
            (int)(cupInput[sizeof(cupInput)/sizeof(int)-1]),
            (int)(sizeof(cupInput)/sizeof(int)+1) );
   next[cupInput[sizeof(cupInput)/sizeof(int)-1]]=sizeof(cupInput)/sizeof(int)+1;
 
   // Append additional, implicit cups
+  printf("Appending %i more cups.\n", (int)(numCups-sizeof(cupInput)/sizeof(int)));
   for (int x=sizeof(cupInput)/sizeof(int)+1; x<numCups; x++) {
     //printf("Inserting next[%i] = %i\n", x, x+1);
     next[x]=x+1;
@@ -55,8 +56,6 @@ int main() {
   // Last one in the list is broken again - loop it back to the first
   printf("Lastly, next[%i]=%i\n", numCups, cupInput[0]);
   next[numCups]=cupInput[0];
-
-  printf("next[20]=%i\n", next[20]);
 
   int pickup1;
   int pickup2;
@@ -107,7 +106,7 @@ int main() {
     current=postPickup;
 
     moveCount++;
-    if ( moveCount % 100000 == 0 ) {
+    if ( moveCount % 1000000 == 0 ) {
       printf("Completed %i moves\n", moveCount);
     }
   }
