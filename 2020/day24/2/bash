@@ -141,18 +141,28 @@ function changeState() {
 
 function trimBoundaries() {
   local shrinkable
+  local x
   local y
 
   # Attempt to narrow X-Min, twice
   for attempt in {1..2}; do
     shrinkable="True"
     y=${yMin}
+
+    if [[ $((${xMin/-/}%2)) -eq 0 ]]; then
+      # If x is even, then y will be divisible by 4
+      [[ $((${y/-/}%4)) -eq 0 ]] || y=$((y+2))
+    else
+      # If x is odd, then y wont be divisible by 4
+      [[ $((${y/-/}%4)) -eq 0 ]] && y=$((y+2))
+    fi
+
     while [[ ${y} -le ${yMax} ]]; do
       if isBlack ${xMin} ${y}; then
         shrinkable="False"
         break 2
       fi
-      y=$((y+2))
+      y=$((y+4))
     done
     if [[ "${shrinkable}" == "True" ]]; then
       debug "X layer ${xMin} is *all* white - removing that whole layer"
@@ -164,12 +174,21 @@ function trimBoundaries() {
   for attempt in {1..2}; do
     shrinkable="True"
     y=${yMin}
+
+    if [[ $((${xMax/-/}%2)) -eq 0 ]]; then
+      # If x is even, then y will be divisible by 4
+      [[ $((${y/-/}%4)) -eq 0 ]] || y=$((y+2))
+    else
+      # If x is odd, then y wont be divisible by 4
+      [[ $((${y/-/}%4)) -eq 0 ]] && y=$((y+2))
+    fi
+
     while [[ ${y} -le ${yMax} ]]; do
       if isBlack ${xMax} ${y}; then
         shrinkable="False"
         break 2
       fi
-      y=$((y+2))
+      y=$((y+4))
     done
     if [[ "${shrinkable}" == "True" ]]; then
       debug "X layer ${xMax} is *all* white - removing that whole layer"
@@ -179,11 +198,21 @@ function trimBoundaries() {
 
   # Attempt to narrow Y Min:
   shrinkable="True"
-  for x in $(seq ${xMin} ${xMax}); do
+  x=${xMin}
+  # We only need to check half the x values on each row
+  if [[ $((${yMin/-/}%4)) -eq 0 ]]; then
+    # If yMin%4=0, x will be even
+    [[ $((${x/-/}%2)) -eq 1 ]] && x=$((x+1))
+  else
+    # If yMin%4=2, x will be odd
+    [[ $((${x/-/}%2)) -eq 0 ]] && x=$((x+1))
+  fi
+  while [[ ${x} -le ${xMax} ]]; do
     if isBlack ${x} ${yMin}; then
       shrinkable="False"
       break
     fi
+    x=$((x+2))
   done
   if [[ "${shrinkable}" == "True" ]]; then
     debug "Y layer ${yMin} is *all* white - removing that whole layer"
@@ -192,11 +221,21 @@ function trimBoundaries() {
 
   # Attempt to narrow Y Max:
   shrinkable="True"
-  for x in $(seq ${xMin} ${xMax}); do
+  x=${xMin}
+  # We only need to check half the x values on each row
+  if [[ $((${yMax/-/}%4)) -eq 0 ]]; then
+    # If yMin%4=0, x will be even
+    [[ $((${x/-/}%2)) -eq 1 ]] && x=$((x+1))
+  else
+    # If yMin%4=2, x will be odd
+    [[ $((${x/-/}%2)) -eq 0 ]] && x=$((x+1))
+  fi
+  while [[ ${x} -le ${xMax} ]]; do
     if isBlack ${x} ${yMax}; then
       shrinkable="False"
       break 
     fi
+    x=$((x+2))
   done
   if [[ "${shrinkable}" == "True" ]]; then
     debug "Y layer ${yMax} is *all* white - removing that whole layer"
@@ -316,10 +355,10 @@ for iteration in {1..100}; do
   trimBoundaries
 
   # Decrement min
-  xMin=$((xMin-2))
+  xMin=$((xMin-1))
   yMin=$((yMin-2))
   # Increment max
-  xMax=$((xMax+2))
+  xMax=$((xMax+1))
   yMax=$((yMax+2))
 
   # Have each tile figure out its next state
