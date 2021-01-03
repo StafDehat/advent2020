@@ -46,8 +46,8 @@ int main(int argc, char **argv) {
   char numStr[50];
   char* hash;
   while (1) {
-    if ( count % 10000 == 0 )
-      printf("Testing %i\n", count);
+    //if ( count % 10000 == 0 )
+    //  printf("Testing %i\n", count);
 
     sprintf(numStr, "%i", count); 
     strcpy(testStr, key);
